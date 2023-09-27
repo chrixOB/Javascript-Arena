@@ -11,28 +11,28 @@ const reviews = [
         id: 1,
         name: 'Devi Vishwakuma',
         job: 'backend developer',
-        img: 'C:\Users\HP ELITEBOOK\Documents\GitHub\Javascript-Arena\reviews-project\review_images',
+        img: './review_images/devi.png',
         information: 'asdf qwerty ui op asdf ghjk l zxc v bnm ssjs siydi iuedied i k oio game uiaukasjbcjbcjwb kuaskuaskusaaso  jyfjy grsyersyer fhtrsdhtr fore'
     },
     {
         id: 2,
         name: 'James Rodriguez',
         job: 'UX designer',
-        img: 'C:\Users\HP ELITEBOOK\Documents\GitHub\Javascript-Arena\reviews-project\review_images',
+        img: './review_images/chris1.jpg',
         information: 'rambo race qwerty ui op asdf ghjk l zxc v bnm ssjs siydi iuedied i k oio game uiaukasjbcjbcjwb kuaskuaskusaaso  jyfjy grsyersyer fhtrsdhtr fore'
     },
     {
         id: 3,
         name: 'Jim Parkson',
         job: 'mobile developer',
-        img: 'C:\Users\HP ELITEBOOK\Documents\GitHub\Javascript-Arena\reviews-project\review_images',
+        img: './review_images/cybernet.jpg',
         information: 'obolo ui qwerty ui op asdf ghjk l zxc v bnm ssjs siydi iuedied i k oio game uiaukasjbcjbcjwb kuaskuaskusaaso  jyfjy grsyersyer fhtrsdhtr fore'
     },
     {
         id: 4,
         name: 'Nessy Adams',
         job: 'intern',
-        img: 'C:\Users\HP ELITEBOOK\Documents\GitHub\Javascript-Arena\reviews-project\review_images',
+        img: './review_images/wednesday.png',
         information: 'banana pie qwerty ui op asdf ghjk l zxc v bnm ssjs siydi iuedied i k oio game uiaukasjbcjbcjwb kuaskuaskusaaso  jyfjy grsyersyer fhtrsdhtr fore'
     },
 ]
@@ -45,7 +45,7 @@ const info = document.querySelector(".info")
 // targeting the buttons
 const prevBtn = document.querySelector(".prev-btn")
 const nxtBtn = document.querySelector(".next-btn")
-const randonBtn = document.querySelector(".random-btn")
+const randomBtn = document.querySelector(".random-btn")
 
 currentItem = 0;
 
@@ -87,7 +87,8 @@ prevBtn.addEventListener("click", () => {
     showPerson(currentItem);
 })
 
-// randonBtn.addEventListener("click", () => {
-//     currentItem = Math.floor(Math.random * reviews.length);
-//     showPerson(currentItem)
-// })
+randomBtn.addEventListener("click", () => {
+    let randomNumber = Math.random;
+    console.log(randomNumber)
+    // showPerson();
+})
