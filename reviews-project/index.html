@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review with javascript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(173, 173, 238);
+            height: 100vh;
+        }
+        .title{
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: capitalize;
+            text-align: center;
+            margin-top: 10%;
+            margin-bottom: 0.5%;
+        }
+        hr{
+            width: 5%;
+            margin: 0 auto;
+            height: 10px;
+            background-color: rgb(46, 46, 219);
+        }
+        .card{
+            height: 65%;
+            width: 40%;
+            background: white;
+            margin: 15px auto 0 auto;
+            border-radius: 3%;
+            padding: 2%;
+        }
+        #picture{
+            border-radius: 100px;
+            width: 20%;
+            height: 20%;
+            margin: 0 auto;
+        }
+        img{
+            border-right: 5px solid rgb(46, 46, 219);
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+        #name{
+            margin: 5% auto 0 auto;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        
+        #job-description{
+            margin: 5% auto 5% auto;
+            text-align: center;
+            text-transform:capitalize;
+            color: rgb(46, 46, 219);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        #info{
+            text-align: center;
+            /* text-overflow: clip; */
+            margin-top: 5%;
+        }
+
+        #buttons{
+            border: 1px solid black;
+        }
+
+        button{
+            width: 20%;
+            height: 10%;
+            background: rgb(46, 46, 219);
+            text-transform: capitalize;
+            font-size: medium;
+        }
+
+        .prev-and-next{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red; */
+            margin-top: 3%;
+        }
+        .next-btn{
+            margin-left: 10%;
+        }
+
+        .random-btn{
+            margin-left: 40%;
+            margin-top: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">our reviews</div>
+    <hr>
+
+    <div class="card">
+        <div id="picture"><img src="./review_images/chris.jpg" alt="pic goes here" id="image" ></div>
+        <div id="name">Anang Christian</div>
+        <div id="job-description">Frontend Developer</div>
+        <p class="info">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, ad 
+            consequatur aperiam eveniet qui eligendi quibusdam optio provident id esse odit? Earum est aut quia, 
+            inventore rem nulla corrupti velit veniam architecto consectetur distinctio mollitia commodi, 
+            at aperiam laborum pariatur?
+        </p>
+        <div id="buttons">
+            <div class="prev-and-next">
+                <!-- prev btn -->
+                <button class="prev-btn">
+                    previous
+                </button>
+
+                <!-- nxt btn -->
+                <button class="next-btn">
+                    next
+                </button>
+            </div>
+            
+            
+            <!-- random btn -->
+            <button class="random-btn">
+                random
+            </button>
+
+        </div>
+    </div>
+<script src="./reviews.js"></script>    
+</body>
+</html>
