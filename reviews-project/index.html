@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review with javascript</title>
-    <style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    <!-- <style>
         *{
             margin: 0;
             padding: 0;
@@ -96,10 +100,30 @@
             margin-left: 40%;
             margin-top: 3%;
         }
+    </style> -->
+    <style>
+        .custom-img {
+    height: 15%;
+    width: 15%;
+    border-radius: 100%;
+  }
+
+  .center-card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    .center-button{
+        text-align: center;
+    }    
+
+        
     </style>
 </head>
 <body>
-    <div class="title">our reviews</div>
+    <!-- initially styled with css in the head  -->
+    <!-- <div class="title">our reviews</div>
     <hr>
 
     <div class="card">
@@ -114,25 +138,56 @@
         </p>
         <div id="buttons">
             <div class="prev-and-next">
-                <!-- prev btn -->
+                
                 <button class="prev-btn">
                     previous
                 </button>
 
-                <!-- nxt btn -->
+                
                 <button class="next-btn">
                     next
                 </button>
             </div>
             
             
-            <!-- random btn -->
+            
             <button class="random-btn">
                 random
             </button>
 
         </div>
+    </div> -->
+
+
+    <!-- Let's style with bootstrap instead -->
+    <div class="container">
+
+    <div class="row">
+    <div class="col-md-6">
+    <div class="card mt-4 center-card">
+      <img id="image" src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="custom-img mx-auto mt-3" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center" id="name">Card title</h5>
+        <h6 class="card-subtitle mb-2  text-center text-primary" id="job-description">Card subtitle</h6>
+        <p class="card-text info">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      </div>
+      <!-- <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> -->
+      <!-- <i class="fa fa-chevron-right" aria-hidden="true"></i> -->
+      <div class="center-button d-flex justify-content-center align-items-center">
+          <button class="btn btn-info  w-30 prev-btn mt-3"  role="button">prev </button>
+          <button class="btn btn-info w-30 ml-5 next-btn mt-3"  role="button">next</button>
+      </div>
+      <div class="center-button">    
+          <button class="btn btn-info btn-md random-btn mb-3 mt-2"  role="button">random </button>
+
+      </div>
     </div>
+    </div>
+    </div>
+</div>
 <script src="./reviews.js"></script>    
 </body>
 </html>
+
+<!-- This is my code above. how do i center the card horizontally? -->
