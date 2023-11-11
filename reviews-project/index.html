@@ -8,104 +8,12 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 
-    <!-- <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background: rgb(173, 173, 238);
-            height: 100vh;
-        }
-        .title{
-            font-size: larger;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-transform: capitalize;
-            text-align: center;
-            margin-top: 10%;
-            margin-bottom: 0.5%;
-        }
-        hr{
-            width: 5%;
-            margin: 0 auto;
-            height: 10px;
-            background-color: rgb(46, 46, 219);
-        }
-        .card{
-            height: 65%;
-            width: 40%;
-            background: white;
-            margin: 15px auto 0 auto;
-            border-radius: 3%;
-            padding: 2%;
-        }
-        #picture{
-            border-radius: 100px;
-            width: 20%;
-            height: 20%;
-            margin: 0 auto;
-        }
-        img{
-            border-right: 5px solid rgb(46, 46, 219);
-            width: 100%;
-            height: 100%;
-            border-radius: 100%;
-        }
-        #name{
-            margin: 5% auto 0 auto;
-            text-align: center;
-            text-transform: capitalize;
-            letter-spacing: 2px;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-        }
-        
-        #job-description{
-            margin: 5% auto 5% auto;
-            text-align: center;
-            text-transform:capitalize;
-            color: rgb(46, 46, 219);
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-        }
-        #info{
-            text-align: center;
-            /* text-overflow: clip; */
-            margin-top: 5%;
-        }
-
-        #buttons{
-            border: 1px solid black;
-        }
-
-        button{
-            width: 20%;
-            height: 10%;
-            background: rgb(46, 46, 219);
-            text-transform: capitalize;
-            font-size: medium;
-        }
-
-        .prev-and-next{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* border: 1px solid red; */
-            margin-top: 3%;
-        }
-        .next-btn{
-            margin-left: 10%;
-        }
-
-        .random-btn{
-            margin-left: 40%;
-            margin-top: 3%;
-        }
-    </style> -->
+    
     <style>
         .custom-img {
-    height: 15%;
-    width: 15%;
-    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
   }
 
   .center-card {
@@ -119,44 +27,11 @@
     }    
 
         
-    </style>
+    </style> 
 </head>
 <body>
     <!-- initially styled with css in the head  -->
-    <!-- <div class="title">our reviews</div>
-    <hr>
-
-    <div class="card">
-        <div id="picture"><img src="./review_images/chris.jpg" alt="pic goes here" id="image" ></div>
-        <div id="name">Anang Christian</div>
-        <div id="job-description">Frontend Developer</div>
-        <p class="info">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, ad 
-            consequatur aperiam eveniet qui eligendi quibusdam optio provident id esse odit? Earum est aut quia, 
-            inventore rem nulla corrupti velit veniam architecto consectetur distinctio mollitia commodi, 
-            at aperiam laborum pariatur?
-        </p>
-        <div id="buttons">
-            <div class="prev-and-next">
-                
-                <button class="prev-btn">
-                    previous
-                </button>
-
-                
-                <button class="next-btn">
-                    next
-                </button>
-            </div>
-            
-            
-            
-            <button class="random-btn">
-                random
-            </button>
-
-        </div>
-    </div> -->
+   
 
 
     <!-- Let's style with bootstrap instead -->
@@ -164,7 +39,7 @@
 
     <div class="row">
     <div class="col-md-6">
-    <div class="card mt-4 center-card">
+    <div class="card mt-4 mx-auto center-card">
       <img id="image" src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="custom-img mx-auto mt-3" alt="...">
       <div class="card-body">
         <h5 class="card-title text-center" id="name">Card title</h5>
@@ -172,9 +47,9 @@
         <p class="card-text info">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
       </div>
-      <!-- <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> -->
-      <!-- <i class="fa fa-chevron-right" aria-hidden="true"></i> -->
-      <div class="center-button d-flex justify-content-center align-items-center">
+      <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+       <div class="center-button d-flex justify-content-center align-items-center">
           <button class="btn btn-info  w-30 prev-btn mt-3"  role="button">prev </button>
           <button class="btn btn-info w-30 ml-5 next-btn mt-3"  role="button">next</button>
       </div>
@@ -187,6 +62,10 @@
     </div>
 </div>
 <script src="./reviews.js"></script>    
+
+
+ 
+
 </body>
 </html>
 
